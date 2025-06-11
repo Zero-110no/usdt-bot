@@ -13,7 +13,7 @@ async def handle_address(update: Update, context: ContextTypes.DEFAULT_TYPE):
     address = update.message.text
     usdt_balance = get_usdt_balance(address)
     last_txns = get_last_transactions(address)
-    msg = f"📦 الرصيد: {usdt_balance} USDT
+    msg = f"📦 الرصيد: {usdt_balance} USDT"
 
 🧾 آخر 10 معاملات:
 " + "
